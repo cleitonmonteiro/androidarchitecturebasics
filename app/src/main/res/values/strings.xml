@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android Architecture Basics</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="feed_fragment_label">Feed</string>
+    <string name="post_detail_fragment_label">Detail</string>
+
+    <string name="load_posts_error">Can\'t update latest posts.</string>
+    <string name="no_posts_to_show">No posts to show!</string>
+    <string name="front_page_tag_label">Front Page</string>
+    <string name="story_tag_label">Story</string>
+    <string name="new_tag_label">New</string>
+</resources>

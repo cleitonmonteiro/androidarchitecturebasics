@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FeedFragment">
+
+    <fragment
+        android:id="@+id/FeedFragment"
+        android:name="io.github.cleitonmonteiro.androidarchitecturebasics.ui.feed.FeedFragment"
+        android:label="@string/feed_fragment_label"
+        tools:layout="@layout/fragment_feed">
+
+        <action
+            android:id="@+id/action_FeedFragment_to_PostDetailFragment"
+            app:destination="@id/PostDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PostDetailFragment"
+        android:name="io.github.cleitonmonteiro.androidarchitecturebasics.ui.detail.PostDetailFragment"
+        android:label="@string/post_detail_fragment_label"
+        tools:layout="@layout/fragment_post_detail">
+        <argument
+            android:name="post"
+            app:argType="io.github.cleitonmonteiro.androidarchitecturebasics.data.model.Post" />
+    </fragment>
+</navigation>
